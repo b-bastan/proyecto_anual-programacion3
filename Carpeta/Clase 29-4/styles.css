@@ -1,0 +1,19 @@
+.box_one{
+    background-color: blue;
+    text-align: center;
+    padding: 100px 0;
+    z-index: 0;
+    top: 75px;
+    left: 75px;
+}
+.box_two{
+    top: 100px;
+    left: 75px;
+    background-color: green;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+    top: 75px;
+    left: 75px;
+    z-index: 2;
+}

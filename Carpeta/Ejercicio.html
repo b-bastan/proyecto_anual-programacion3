@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- UTF-8 acepta ñ -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href='estilo.css'>
+    <title>
+        Moodle
+    </title>
+</head>
+<body>
+    <header>
+        <p>
+            <a href="#foot">Ir a pie de pagina como id</a>
+            <a href=".foote">Ir a pie de pagina como class (No funca)</a>
+        </p>
+        <img src="./Recursos/Multimedia/ETEC-logo.jpg" alt="Logo" width="75" height="75"/>
+        <img src="./Recursos/Multimedia/ETEC-logo.jpg" alt="Logo pero de vuelta" width="75" height="75">
+        <h1>Escuela Tecnica</h1>
+        <hr>
+        <h2>Biologia</h2>
+        <h3>Eje 1</h3> 
+        <a href="https://etecvirtual.um.edu.ar/">Link a moodle</a>
+    </header>
+    <main>
+        <p>No poner styles en HTML, usar siempre CSS</p>
+        <li class="cuadro">
+            Texto 1 y sale con •  
+        </li>
+        <li>Texto 2 sale pegado :/</li>
+        <p>favicon es lo de al lado del nombre arriba del link, se usa en head y se usa con (link rel="shortcut icon" href="")</p>
+        <p>iframe es para colocar contenido multimedia</p>
+        <p>li es List Item, uno para cada texto</p>
+            <ul> 
+                <table border="1px 2px" class="cuadro"> 
+                    <tr><th>Primera columna</th><th>Segunda columna</th><th>Esta es la primera fila</th></tr>
+                    <tr><th>Home</th><th>Contactanos</th><th>Clases</th></tr>
+                    <p>cellpadding es el espacio entre el borde y el texto</p>
+                    <p>cellspacing es la separacion entre cuadros</p>
+                    <p>Contactos</p>
+                    <p>Sila lista es ordenada es ol y sin orden es ul</p>
+                    <p>ID es para UN objeto y class es para varios objetos, es recomendable no nombrar con IDs a menos que sean cosas como el footer, por lo que se usa mas la clase</p>
+                    <p>tr indica la fila y con th indentifico dentro de la columna y pone el dato en negrita</p>
+                </table>
+            </ul> 
+         
+        <p><q><em>Hola</em> <strong>mundo</strong></q> dijo alguien una vez</p>
+        <p>Hola que tal</p>
+        <p>Hola<br>que tal</p>
+    </main>
+    <hr>
+    <footer>
+        <p><em>Y esto?</em><p>
+            <footer id="foot"></footer>
+            <footer class="foote"></footer>
+    </footer>
+</body>
+</html>

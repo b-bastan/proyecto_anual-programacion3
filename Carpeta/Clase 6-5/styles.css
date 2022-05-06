@@ -1,0 +1,10 @@
+.contenedor_padre{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /*Todos respetan la misma linea, van centrados y no lo más arriba posible*/
+}
+.contenedor_hijo{
+    background-color: aqua;
+}

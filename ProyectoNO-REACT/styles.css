@@ -80,7 +80,7 @@ footer p{
     width: 40px;
     height: 40px;
     font-size: 40px;
-    color: black
+    color: black;
 }
 .icons:hover{
     color: var(--MY-gray-lighter);
@@ -139,6 +139,7 @@ footer p{
     list-style-type: none;
     display: flex;
     background-color: var(--MY-blue-darker);
+    white-space: nowrap;
 }
 .fa-angles-right{
     font-size: 32px;
@@ -165,7 +166,7 @@ footer p{
 }
 .navigator{
     background-color: var(--MY-gray-dark);
-    min-width: 50px;
+    min-width: fit-content;
     max-height: 20px;
     overflow: hidden;
     margin-right: 5px;
@@ -200,6 +201,23 @@ footer p{
         max-height: 100px;
         display: flex;
     }
+    ul li {
+        display: none;
+        visibility: hidden;
+    }
+    ul li:nth-last-child(-n+2) {
+        display: flex;
+        max-width: fit-content;
+        visibility: visible;
+    }
+    ul li:first-child{
+        display: flex;
+        max-width: fit-content;
+        visibility: visible;
+    }
+    .fa-angles-right{
+        transform:rotate(180deg);
+    }
 }
 @media (max-width: 550px) {
     header{
@@ -208,6 +226,7 @@ footer p{
         position: relative;
         flex-direction: row;
         flex-wrap: wrap;
+        display: flex; 
     }
     main img{
         max-width: 90%;
@@ -232,6 +251,21 @@ footer p{
         overflow: hidden;
         justify-content: flex-end;
     }
+    ul li {
+        display: none;
+        visibility: hidden;
+    }
+    ul li:nth-last-child(-n+2) {
+        display: flex;
+        max-width: fit-content;
+        visibility: visible;
+    }
+    ul li:first-child{
+        display: flex;
+        max-width: fit-content;
+        visibility: visible;
+    }
+
     .fa-angles-right{
         transform:rotate(180deg);
     }
@@ -242,6 +276,7 @@ footer p{
     .explorer li{
         width: 100px;
     }
+
 }
 
 /*Hay que hacer otro tamaño medido para eso de los 900px en width*/

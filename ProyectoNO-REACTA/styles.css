@@ -176,7 +176,7 @@ footer p{
 .navigator:hover{
     cursor: pointer;
     color: white;
-    background-color: var(--MY-gray);
+    background-color: var(--MY-gray-light);
     transition: 300ms;
 }
 .hidden-ico{
@@ -202,29 +202,53 @@ footer p{
     visibility: hidden;
 }
 
+/*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
 
 #menu li>a{
-  background-color: grey;
-  color: white;
-  padding: 10px;
-  display: block;
-  text-decoration: none;
-  min-width: 100px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    min-width: 100px;
 }
 #menu li>a:hover{
-  color: #000;
-  background-color: #eaeaea;
+    color: #000;
+    background-color: #eaeaea;
 }
 #menu>li{
-  float: left;
-  text-align:center
+    text-align:left;
 }
 #menu>li>ul{
-  display: none;
+    display: none;
 }
 #menu>li:hover>ul {
-  display:block;
+    display:block;
 }
+
+.nohover:hover {
+    background-color: var(--MY-gray-light)!important;
+    color: white !important;
+    transition: 800ms !important;
+}
+
+ul, ol {
+    list-style:none;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.nav li:hover > ul {
+    display:block;
+    background-color: var(--MY-gray-light);
+    margin: 5px;
+    margin-left: -10px;
+}
+
+/*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
+
 @media (max-width: 900px){
     .align-me{
         padding-bottom: 10px;
@@ -318,3 +342,28 @@ footer p{
 }
 
 /*Hay que hacer otro tamaño medido para eso de los 900px en width*/
+
+.lista a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+}
+
+.lista {
+    background-color: antiquewhite;
+    width: fit-content;
+    display: none;
+}
+
+.lista a:hover{
+    background-color: aqua;
+}
+
+.desplegable:hover lista {
+    display: block;
+}
+
+.desplegable {
+    position: absolute;
+}

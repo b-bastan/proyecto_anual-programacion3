@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="stylesBugBefore.css">
+</head>
+<body>
+    <header>
+        <div class="align-me">
+            <a href="#">
+                <img src="./Source/Imagenes/ETEC.jpg" alt="Logo ETEC" class="icons">
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-house icons"></i>
+            </a>
+        </div>
+        <ul class="explorer nav"> <!--Acoplar los divs para que queden bien-->
+            <li><i class="fa-solid fa-angles-right"></i></li>
+                <ul class="hidden-for-responsive"></ul>
+            <li class="navigator"><a href="#" class="explorer-item"> Home</a></li>
+            <ul id="menu" class="navigator">
+                <li class="navigator"><a href="#" class="explorer-item nohover"> Programación</a><div class="fa-solid fa-angle-right"></div>
+                    <ul>
+                        <li><a href="#">Electrónica</a></li>
+                        <li><a href="#">Informática</a></li>
+                        <li><a href="#">Matemática</a></li>
+                    </ul>
+                </li>
+            </ul>  
+
+            <li class="navigator"><a href="#" class="explorer-item"> Eje 1</a><div class="fa-solid fa-angle-right"></div>
+                <ul class="ul-combo">
+                    <li><a href="#"></a>Eje 2</a></li>
+                    <li><a href="#"></a>Eje 3</a></li>
+                    <li><a href="#"></a>Trabajos practicos</a></li>
+                </ul>
+            </li>
+            <li class="navigator"><a href="#" class="explorer-item"> Wireframe</a><div class="fa-solid fa-angle-right"></div>
+                <ul class="ul-combo">
+                    <li><a href="#">Proyecto</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="align-me">
+            <ul class="support_bar"> <!-- Ordenar las distancias, padding y margin-->
+                <li><a href="#"><i class="fa-solid fa-bell icons_menu"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-calendar-days icons_menu"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-star icons_menu"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-note-sticky icons_menu"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-envelope icons_menu"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-folder icons_menu"></i></a></li>
+            </ul>
+            <a href="#">
+                <i class="fa-solid fa-bars hidden-ico"></i>
+            </a>
+            <a href="#">
+                <i class="fa-regular fa-circle-user user"></i>
+            </a>
+        </div>
+    </header>
+    <main>
+        <img src="./Source/Imagenes/ETEC.jpg" alt="">
+        <h1>Programacion</h1>
+        <h3>Tareas por hacer</h2>
+        <ol>
+            <li>Editar color de iconos con MediBang Pro</li>
+            <li>Pongamole el overflow: scroll a main y quitemos el position fixed al resto</li>
+            <li>Recortar iconos con MediBang Pro</li>
+            <li>Definir paleta de colores</li>
+            <li>Aplicar cambios de paleta de colores</li>
+            <li>Aplicar mas transiciones</li>
+        </ol>
+        <p class="hidden-ico" style="font-size: 50px;">Tengo que corregir el explorador</p>
+    </main>
+    <footer>
+        <a href="#"><p>Contactanos</p></a>
+        <p>Nombre del alumno</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/490d09fdd3.js" crossorigin="anonymous"></script>
+</body>
+</html>

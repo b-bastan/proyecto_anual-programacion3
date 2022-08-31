@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/Source/css/styles.css">
+    <link rel="stylesheet" href="/Source/css/root.css">
+    <link rel="stylesheet" href="/Source/css/stylesHeader.css">
 </head>
 <body>
     <header>
         <div class="align-me">
-            <a href="#">
-                <img src="./Source/Imagenes/ETEC.jpg" alt="Logo ETEC" class="icons">
+            <a href="/pages/contacto.html">
+                <img src="/Source/Imagenes/ETEC.jpg" alt="Logo ETEC" class="icons">
             </a>
-            <a href="#">
+            <a href="/index.html">
                 <i class="fa-solid fa-house icons"></i>
             </a>
         </div>
@@ -21,22 +23,22 @@
             <li><i class="fa-solid fa-angles-right"></i>
                 <ul class="hidden-for-responsive"></ul> <!-- Usar para expandir el resto -->
             </li>
-            <li class="navigator resp"><a href="#" class="explorer-item"> Home</a></li>
+            <li class="navigator resp"><a href="/index.html" class="explorer-item"> Home</a></li>
             <ul class="menu resp">
-                <li class="navigator"><a href="#" class="explorer-item"> Programación</a><div class="fa-solid fa-angle-right"></div>
+                <li class="navigator"><a href="/pages/materia.html" class="explorer-item"> Programación</a><div class="fa-solid fa-angle-right"></div>
                     <ul>
-                        <li><a href="#">Electrónica</a></li>
-                        <li><a href="#">Informática</a></li>
+                        <li><a href="#">Literatura</a></li>
+                        <li><a href="#">Redes</a></li>
                         <li><a href="#">Matemática</a></li>
                     </ul>
                 </li>
             </ul>
             <ul class="menu resp"> 
-                <li class="navigator"><a href="#" class="explorer-item"> Eje 1</a><div class="fa-solid fa-angle-right"></div>
+                <li class="navigator"><a href="#" class="explorer-item"> Wireframe</a><div class="fa-solid fa-angle-right"></div>
                     <ul>
-                        <li><a href="#">Eje 2</a></li>
-                        <li><a href="#">Eje 3</a></li>
-                        <li><a href="#">Trabajos practicos</a></li>
+                        <li><a href="#">Flex</a></li>
+                        <li><a href="#">Responsive</a></li>
+                        <li><a href="#">Grid</a></li>
                     </ul>
                 </li>
             </ul>
@@ -68,22 +70,88 @@
         </div>
     </header>
     <main>
-        <img src="./Source/Imagenes/ETEC.jpg" alt="">
-        <h1>Programacion</h1>
-        <h3>Tareas por hacer</h2>
-        <ol>
-            <li>Editar color de iconos con MediBang Pro</li>
-            <li>Pongamole el overflow: scroll a main y quitemos el position fixed al resto</li>
-            <li>Recortar iconos con MediBang Pro</li>
-            <li>Definir paleta de colores</li>
-            <li>Aplicar cambios de paleta de colores</li>
-            <li>Aplicar mas transiciones</li>
-            <li>Corregir los margenes de los objetos, por ejemplo, todos los iconos de la barra superior tienen mas recuadro a la izquierda</li>
-        </ol>
-        <p class="hidden-ico" style="font-size: 50px;">Está bonito el explorador</p>
+        <section class="materias">
+            <a href="/pages/materia2.html" style="color: black;"><div class="materias--materia" onclick="location.href">
+                    <img src="/Source/Imagenes/ImagenPequeña.png" alt="Logo materia" class="logo">
+                    <h2 class="nom-mat">Programacion III</h2>
+                    <h3 class="curso">5°I</h3>
+                    <h3 class="profesor">Bruno Pontiz</h3>
+                    <p class="programa">Programa</p>
+                </div></a>
+            <div class="materias--materia">
+                <img src="/Source/Imagenes/ImagenPequeña.png" alt="Logo materia" class="logo">
+                <h2 class="nom-mat">Orientacion y Tutoria</h2>
+                <h3 class="curso">5°I</h3>
+                <h3 class="profesor">Un nombre muy largo</h3>
+                <p class="programa">Programa</p>
+            </div>
+            <div class="materias--materia">
+                <img src="/Source/Imagenes/ImagenPequeña.png" alt="Logo materia" class="logo">
+                <h2 class="nom-mat">Nombre materia</h2>
+                <h3 class="curso">5°I</h3>
+                <h3 class="profesor">Profesor</h3>
+                <p class="programa">Programa</p>
+            </div>
+            <div class="materias--materia">
+                <img src="/Source/Imagenes/ImagenPequeña.png" alt="Logo materia" class="logo">
+                <h2 class="nom-mat">Nombre materia</h2>
+                <h3 class="curso">5°I</h3>
+                <h3 class="profesor">Profesor</h3>
+                <p class="programa">Programa</p>
+            </div>
+            <div class="materias--materia">
+                <img src="/Source/Imagenes/ImagenPequeña.png" alt="Logo materia" class="logo">
+                <h2 class="nom-mat">Nombre materia</h2>
+                <h3 class="curso">5°I</h3>
+                <h3 class="profesor">Profesor</h3>
+                <p class="programa">Programa</p>
+            </div>
+            <div class="materias--materia">
+                <img src="/Source/Imagenes/ImagenPequeña.png" alt="Logo materia" class="logo">
+                <h2 class="nom-mat">Nombre materia</h2>
+                <h3 class="curso">5°I</h3>
+                <h3 class="profesor">Profesor</h3>
+                <p class="programa">Programa</p>
+            </div>
+            <div class="materias--materia">
+                <img src="/Source/Imagenes/ImagenPequeña.png" alt="Logo materia" class="logo">
+                <h2 class="nom-mat">Nombre materia</h2>
+                <h3 class="curso">5°I</h3>
+                <h3 class="profesor">Profesor</h3>
+                <p class="programa">Programa</p>
+            </div>
+            <div class="materias--materia">
+                <img src="/Source/Imagenes/ImagenPequeña.png" alt="Logo materia" class="logo">
+                <h2 class="nom-mat">Nombre materia</h2>
+                <h3 class="curso">5°I</h3>
+                <h3 class="profesor">Profesor</h3>
+                <p class="programa">Programa</p>
+            </div>
+            <div class="materias--materia">
+                <img src="/Source/Imagenes/ImagenPequeña.png" alt="Logo materia" class="logo">
+                <h2 class="nom-mat">Nombre materia</h2>
+                <h3 class="curso">5°I</h3>
+                <h3 class="profesor">Profesor</h3>
+                <p class="programa">Programa</p>
+            </div>
+            <div class="materias--materia">
+                <img src="/Source/Imagenes/ImagenPequeña.png" alt="Logo materia" class="logo">
+                <h2 class="nom-mat">Nombre materia</h2>
+                <h3 class="curso">5°I</h3>
+                <h3 class="profesor">Profesor</h3>
+                <p class="programa">Programa</p>
+            </div>
+            <div class="materias--materia">
+                <img src="/Source/Imagenes/ImagenPequeña.png" alt="Logo materia" class="logo">
+                <h2 class="nom-mat">Nombre materia</h2>
+                <h3 class="curso">5°I</h3>
+                <h3 class="profesor">Profesor</h3>
+                <p class="programa">Programa</p>
+            </div>
+        </section>
     </main>
     <footer>
-        <a href="#"><p>Contactanos</p></a>
+        <a href="/pages/contacto.html"><p>Contactanos</p></a>
         <p>Nombre del alumno</p>
     </footer>
     <script src="https://kit.fontawesome.com/490d09fdd3.js" crossorigin="anonymous"></script>

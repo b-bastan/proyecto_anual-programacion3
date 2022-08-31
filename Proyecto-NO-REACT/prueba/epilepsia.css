@@ -1,0 +1,37 @@
+/* .color{
+    color: linear-gradient(to right, red, yellow);
+    background: radial-gradient(ellipse, navy, pink, blueviolet);
+    opacity: 100%;
+}
+.transform:hover{
+    opacity: 30%;
+    transform: translate(10px, 20px);
+    transform: rotate(90deg);
+    transform: rotateX(70deg);
+    transform: rotateY(45deg);
+    transform: scale(2,1); Escala al doble
+    transform: skew(20deg, 10deg);
+    transform: skewX(30deg);
+    transition: 1500ms;
+}
+.transform:focus{
+    font-size: 24px;
+    width: 200px;
+}
+@keyframes epilepsia{
+    0%{width: 10%; background-color: red;}
+    10%{width: 40%;}
+    50%{width: 70%px; background-color: yellow;}
+    70%{background-color: blueviolet;}
+    100%{width: 100%;}
+}
+h2 {
+    animation-duration: 5s;
+    animation-delay: 15s;
+    animation-name: epilepsia;
+    animation-iteration-count: infinite;
+} */
+
+.smt {
+    background-color: red;
+}

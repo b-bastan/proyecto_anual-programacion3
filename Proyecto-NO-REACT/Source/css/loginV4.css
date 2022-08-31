@@ -1,0 +1,56 @@
+* {
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+#main { /* Agarro, lo parto en 2 y pongo de un lado el fondo con height 100% y un z-index bajo, del otro lado iria container con un z-index superior */
+    height: 40em; 
+    background-color: red;
+    background-image:url(/Source/Imagenes/background.jpg);
+    animation-name: backimage;
+    animation-duration: 90s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "register login";
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--MY-gray-lighter);
+}
+
+#cont_log {
+    grid-area: login;
+    border-left: 2px solid var(--MY-blue-pastel);
+}
+
+#cont_reg {
+    grid-area: register;
+    border-right: 2px solid var(--MY-blue-pastel);
+    display: none;
+}
+
+#login, #register {
+    height: 60%;
+    width: 60%;
+    margin: 20% 0 20% 0;
+    border: 2px solid red;
+    padding: 2% 2% 0 2%;
+    background-color: rgb(51, 201, 228);
+    border: 3px solid rgb(16, 49, 196);
+    border-radius: 20px;
+}
+
+.login_extras, .register_extras {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,0 +1,13 @@
+2, 3, 1, 4			> 3, 1, 4, 2
+
+Desplazó el primer valor al final
+
+
+1, 2, 3, 4			> 2, 3, 4, 1
+
+Desplazó el primer valor al final
+
+
+1, 3, 5, 2, 4, 6, 8		> 4, 3, 5, 2, 6, 8, 1
+
+Desplazó el primer valor al final e intento ordenar

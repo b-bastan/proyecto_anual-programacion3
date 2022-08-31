@@ -1,0 +1,35 @@
+.contenidos {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+
+.contenidos button {
+    width: 19%;
+    font-size: 16px;
+    background-color: red;
+    border-radius: 15px;
+}
+
+.tarea {
+    display: grid;
+    grid-template-areas: "logo tipo checkbox" "logo link checkbox";
+}
+
+.pagina, .url, .recurso {
+    display: grid;
+    grid-template-areas: "logo tipo" "logo link";
+}
+
+.logo {
+    grid-area: "logo";
+}
+
+.tipo {
+    grid-area: "tipo";
+}
+
+.link {
+    grid-area: "link";
+}
+

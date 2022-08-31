@@ -1,28 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactanos</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="/Source/css/stylesContacto.css">
+    <link rel="stylesheet" href="/Source/css/root.css">
+    <link rel="stylesheet" href="/Source/css/stylesHeader.css">
 </head>
 <body>
     <header>
-        <div class="barra_sup">
-            <a href="contacto.html">
-                <img src="../Source/Imagenes/ETEC.png" alt="Logo ETEC" class="logos">
+        <div class="align-me">
+            <a href="/pages/contacto.html">
+                <img src="/Source/Imagenes/ETEC.jpg" alt="Logo ETEC" class="icons">
             </a>
-            <a href="contacto.html">
-                <img src="../Source/Imagenes/Mensaje.png" alt="Contactanos" class="logos">
+            <a href="/index.html">
+                <i class="fa-solid fa-house icons"></i>
+            </a>
+        </div>
+        <ul class="explorer nav"> <!--Acoplar los divs para que queden bien-->
+            <li><i class="fa-solid fa-angles-right"></i>
+                <ul class="hidden-for-responsive"></ul> <!-- Usar para expandir el resto -->
+            </li>
+            <li class="navigator resp"><a href="/index.html" class="explorer-item"> Home</a></li>
+            <li class="navigator resp"><a href="#" class="explorer-item" onclick="copiarAlPortapapeles('(0261) 439-2939')"> Contacto</a></li>
+            <li class="navigator resp"><a href="#" class="explorer-item" onclick="copiarAlPortapapeles('(0261) 439-2939')" id="telefono"> Teléfono</a></li>
+            <li class="navigator resp"><a href="#" class="explorer-item" onclick="copiarAlPortapapeles('(0261) 439-2939')"> (0261) 439-2939</a></li>
+        </ul>
+        <div class="align-me">
+            <ul class="support_bar"> <!-- Ordenar las distancias, padding y margin-->
+                <li><a href="#"><i class="fa-solid fa-bell icons_menu"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-calendar-days icons_menu"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-star icons_menu"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-note-sticky icons_menu"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-envelope icons_menu"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-folder icons_menu"></i></a></li>
+            </ul>
+            <a href="#">
+                <i class="fa-solid fa-bars hidden-ico"></i>
+            </a>
+            <a href="#">
+                <i class="fa-regular fa-circle-user user"></i>
             </a>
         </div>
     </header>
-    <main>
-
+    <main class="contacto">
+        <section class="titulo">
+            <h1>Contactanos, pulsa los botones</h1>
+        </section>
+        <section class="serv_contacto">
+            <div class="serv_contacto__item telefono">
+                <i class="fa-solid fa-phone"></i>
+                <p>Lunes a viernes de 9 a 17hs</p>
+                <a class="serv_contacto__item--href" href="tel:+54 9 261 439-2939">Llamar</a>
+            </div>
+            <div class="serv_contacto__item mail">
+                <i class="fa-solid fa-envelope icons_menu"></i>
+                <p>Envianos un mensaje y nosotros lo respondemos</p>
+                <a class="serv_contacto__item--href" href="mailto:informes@etec.um.edu.ar">Enviar Mail</a>
+            </div>
+            <div class="serv_contacto__item whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+                <p>Lunes a viernes de 9 a 17hs</p>
+                <a class="serv_contacto__item--href" href="https://wa.me/5492614392939">Mensaje </a>
+            </div>
+            <div class="serv_contacto__item ubicacion">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Abierto de 9 a 17hs</p>
+                <a class="serv_contacto__item--href" href="https://www.google.com.ar/maps/place/Escuela+T%C3%A9cnica+de+la+Universidad+de+Mendoza/@-32.9521386,-68.8541088,17z/data=!3m1!4b1!4m5!3m4!1s0x967e0b067323d179:0x2f6e98ec0645ef99!8m2!3d-32.9521431!4d-68.8519201" target="_blank" rel="noopener noreferrer">Ubicacion</a>
+            </div>
+        </section>
+        <br><br><br><br>
+        <section class="redes">
+            <h1 class="titulo">Nuestras redes</h1>
+            <div class="redes_redes">
+                <hr>
+                <a href="https://www.youtube.com/channel/UCqlCgcF0fEAWFsVQJX9SmFw"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/etec_um/?hl=es"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/etecmza/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/UdeMendoza"><i class="fa-brands fa-twitter"></i></a>
+                <hr>
+            </div>
+        </section>
     </main>
     <footer>
-
+        <a href="https://www.laserenisima.com.ar/contacto.php">Link coso la serenisima</a>
+        <a href="https://www.samsung.com/ar/">Tienda de Samsung</a>
+        <a href="https://xiaomistore.com.ar/">Tienda de Xiaomi</a>
     </footer>
+    <script src="https://kit.fontawesome.com/490d09fdd3.js" crossorigin="anonymous"></script>
+    <script src="/Source/js/contacto.js"></script>
 </body>
 </html>

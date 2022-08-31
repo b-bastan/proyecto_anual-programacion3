@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso: Programacion 5° Informatica</title>
+    <link rel="stylesheet" href="/Source/css/materia2.css">
+    <link rel="stylesheet" href="/Source/css/root.css">
+    <link rel="stylesheet" href="/Source/css/stylesHeader.css">
+    <script src="https://kit.fontawesome.com/490d09fdd3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="align-me">
+            <a href="/pages/contacto.html">
+                <img src="/Source/Imagenes/ETEC.jpg" alt="Logo ETEC" class="icons">
+            </a>
+            <a href="/index.html">
+                <i class="fa-solid fa-house icons"></i>
+            </a>
+        </div>
+        <ul class="explorer nav"> <!--Acoplar los divs para que queden bien-->
+            <li><i class="fa-solid fa-angles-right"></i>
+                <ul class="hidden-for-responsive"></ul> <!-- Usar para expandir el resto -->
+            </li>
+            <li class="navigator resp"><a href="/index.html" class="explorer-item"> Home</a></li>
+            <ul class="menu resp">
+                <li class="navigator"><a href="#" class="explorer-item"> Programación</a><div class="fa-solid fa-angle-right"></div>
+                    <ul>
+                        <li><a href="#">Literatura</a></li>
+                        <li><a href="#">Redes</a></li>
+                        <li><a href="#">Matemática</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="menu resp"> 
+                <li class="navigator"><a href="#" class="explorer-item"> Eje 1</a><div class="fa-solid fa-angle-right"></div>
+                    <ul>
+                        <li><a href="#">Eje 2</a></li>
+                        <li><a href="#">Eje 3</a></li>
+                        <li><a href="#">Trabajos practicos</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="menu resp">
+                <li class="navigator"><a href="#" class="explorer-item"> Wireframe</a><div class="fa-solid fa-angle-right"></div>
+                    <ul>
+                        <li><a href="#">Flex</a></li>
+                        <li><a href="#">Responsive</a></li>
+                        <li><a href="#">Grid</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </ul>
+        <div class="align-me">
+            <ul class="support_bar"> <!-- Ordenar las distancias, padding y margin-->
+                <li><a href="#"><i class="fa-solid fa-bell icons_menu"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-calendar-days icons_menu"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-star icons_menu"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-note-sticky icons_menu"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-envelope icons_menu"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-folder icons_menu"></i></a></li>
+            </ul>
+            <a href="#">
+                <i class="fa-solid fa-bars hidden-ico"></i>
+            </a>
+            <a href="#">
+                <i class="fa-regular fa-circle-user user"></i>
+            </a>
+        </div>
+    </header>
+
+    <main id="main">
+        <nav class="indice">
+            <button class="indice_etapa" id="trigger_Diag">Diagnostico</button>
+            <button class="indice_etapa" id="trigger_Eje1">Eje 1</button>
+            <button class="indice_etapa" id="trigger_Eje2">Eje 2</button>
+            <button class="indice_etapa" id="trigger_Trabajos">Trabajos practicos</button>
+        </nav>
+
+        <section class="apartado" id="diagnostico">
+            <div class="container" onmouseleave="document.getElementById('tarea_modal').classList.remove('show'); document.getElementById('main').classList.remove('blur');">
+                
+                <h1 style="margin: 1em;">Diagnostico</h1>
+
+                <div class="tarea">
+                    <i class="fa-solid fa-file-circle-plus logo"></i>
+                    <p class="tipo">Tarea</p>
+                    <button type="button" id="checkbox" value="undone" onclick="buttoncheck()">Marcar como hecha</button>
+                    <p class="link" onclick="displayTarea()" style="cursor: pointer;">Ejercitacion de Display grid, flex y block</p>
+                </div>
+                <div id="tarea_modal">
+                    <div class="separador">
+                        <h3>Ejercitación de Display grid, flex y block</h3>
+                        <p onclick="cerrar()">Pulse para cerrar</p>
+                    </div>
+                    <p>Para esta tarea, deben realizar una página que utilice al menos una vez cada display mencionado (Grid, flex y block)</p>
+                    <div class="tarea_modal_entrega">
+                        Todo lo de entrega
+                        <p>A</p>
+                        <p>A</p>
+                        <p>A</p>
+                        <p>A</p>
+                        <p>A</p>
+                    </div>
+                </div>
+
+                <div class="url">
+                    <i class="fa-solid fa-globe logo"></i>
+                    <p class="tipo">URL</p>
+                    <a href="https://etecvirtual.um.edu.ar/my/courses.php" target="_blank" class="link">Una URL</a>
+                </div>
+
+                <div class="pagina">
+                    <i class="fa-solid fa-file-lines logo"></i>
+                    <p class="tipo">Teoria</p>
+                    <p class="link" onclick="controlePagina()">Clase 10/8</p>
+                    <i class="fa-solid fa-angle-right" onclick="controlePagina()"></i>
+                </div>
+                <div id="pagina_dropdown">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex esse maxime deleniti autem. Numquam culpa aspernatur veritatis error laboriosam fuga odit, veniam illum minima, iusto tempora dolores animi, consequatur delectus!</p>
+                    <p>B</p>
+                    <p>B</p>
+                    <p>B</p>
+                    <p>B</p>
+                    <p>B</p>
+                    <p>B</p>
+                    <p>B</p>
+                    <p>B</p>
+                    <p>B</p>
+                    <p>B</p>
+                    <p>B</p>
+                    <p>B</p>
+                    <p>B</p>
+                    <p>B</p>
+                    <p>B</p>
+                    <p>B</p>
+                    <p>B</p>
+                    <p>B</p>
+                    <p>B</p>
+                    <p>B</p>
+                    <p>B</p>
+                    <p>B</p>
+                    <p>B</p>
+                    <p>B</p>
+                    <p>B</p>
+                    <p>B</p>
+                    <p>B</p>
+                    <p>B</p>
+                    <p>B</p>
+                    <p>B</p>
+                </div>
+
+                <div class="recurso">
+                    <i class="fa-solid fa-file-pdf logo"></i>
+                    <p class="tipo">Recurso</p>
+                    <a href="/Source/Imagenes/ETEC.jpg" class="link" download="Imagen ETec">Descargar imagen</a>                
+                </div>
+
+            </div>
+        </section>
+
+        <section class="apartado" id="eje1">
+            <div class="container" onmouseleave="">
+                <h1 style="margin: 1em;">Eje 1</h1>
+                <div class="tarea"></div>
+                <div class="pagina"></div>
+            </div>
+        </section>
+
+        <section class="apartado" id="eje2">
+            <div class="container" onmouseleave="">
+                <h1 style="margin: 1em;">Eje 2</h1>
+                <div class="url"></div>
+                <div class="recurso"></div>
+            </div>
+        </section>
+
+        <section class="apartado" id="trabajos">
+            <div class="container" onmouseleave="">
+                <h1 style="margin: 1em;">TPs</h1>
+                <div class="tarea"></div>
+                <div class="tarea"></div>
+            </div>
+        </section>
+        
+        <section id="inactive">
+            <h1>Todo parece muy tranquilo por esta zona, ¿Por qué no tomas un descanso?</h1>
+            <div><img src="/Source/Imagenes/Descanso.gif" alt="" class="inactive_img"></div>
+        </section>
+    </main>
+    <script src="/Source/js/materia2.js"></script>
+</body>
+</html>

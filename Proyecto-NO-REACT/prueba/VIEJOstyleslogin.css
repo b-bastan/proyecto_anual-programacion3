@@ -1,0 +1,58 @@
+/* header a{
+    Poner hrefs a #
+} */
+main {
+    padding-top: 120px;
+}
+#container{
+    margin-top: 100px;
+    border-radius: 70px;
+    border: 10px solid var(--MY-golden);
+    background-color: var(--MY-gray-dark);
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: 60%;
+    margin: auto;
+}
+#logbox{
+    border-radius: 30px;
+    border: 5px solid var(--MY-blue-darker);
+    background-color: var(--MY-blue-light);
+    height: 120%;
+    margin: -5% 0 0 10%;
+    width: 30%;
+    display: block;
+}
+#regbox{
+    border-radius: 30px;
+    border: 5px solid var(--MY-blue-darker);
+    background-color: var(--MY-blue-light);
+    height: 120%;
+    width: 30%;
+    display: block;
+    margin: -5% 10% auto auto;
+}
+#etecLogo{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    margin-top: 60px;
+    margin-left: 970px;
+    display: none;
+}
+
+.data-insert{
+    display: grid;
+    padding-top: 20px;
+    grid-template-columns: auto auto;
+    grid-auto-columns: 45% 50%;
+    column-gap: 5%;
+    row-gap: 20px;
+    
+}
+
+.title{
+    text-align: center;
+    margin: 2% 0 2% 0;
+}

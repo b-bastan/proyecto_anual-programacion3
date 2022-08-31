@@ -1,0 +1,188 @@
+/* GENERAL */
+
+* {
+    list-style: none;
+}
+
+#main {
+    padding-top: 75px;
+    background-color: var(--MY-gray-lighter);
+    min-height: 62.5em;
+    transition: all ease 300ms;
+}
+
+/* INDICE */
+
+.indice {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.indice_etapa {
+    width: 20%;
+    height: 3em;
+    background-color: var(--MY-gray-lighter);
+    border: none;
+    border-radius: 25px;
+    transition: all ease 300ms;
+}
+
+.indice_etapa:hover {
+    border: 1px solid red;
+    border-radius: 25px;
+    background-color: #6A9BF7;
+}
+
+/* APARTADOS */
+
+.apartado {
+    position: absolute;
+    display: none;
+    width: 100%;
+    background-color: grey;
+    min-height: 2vh;
+}
+
+.container {
+    min-height: 60em;
+}
+
+#inactive {
+    margin-top: 2em;
+    text-align: center;
+    z-index: 1;
+}
+
+#inactive div{
+    margin: 0 20% 0 20%;
+}
+
+/* TAREAS Y DEMAS CATEGORIAS */
+
+.tarea, .url, .recurso, .pagina {
+    display: grid;
+    margin: 0 auto 1em auto;
+    padding: 1em 0 1em 0;
+    width: 94%;
+    border: 2px solid var(--MY-blue-light);
+    border-radius: 10px;
+    background-color: rgb(180, 180, 180);
+} 
+
+.tarea {
+    grid-template-areas: "logo tipo checkbox" "logo link checkbox";
+    grid-template-columns: 10% 70% 20%;
+}
+
+.url, .recurso {
+    grid-template-areas: "logo tipo" "logo link";
+    grid-template-columns: 10% 90%;
+}
+
+.pagina {
+    grid-template-areas: "logo tipo arrow" "logo link arrow";
+    grid-template-columns: 10% 80% 10%;
+}
+
+.logo {
+    grid-area: logo;
+    font-size: 32px;
+    text-align: center;
+    margin: auto 0;
+}
+
+.fa-file-circle-plus {
+    color: #008829;
+}
+
+.fa-globe {
+    color: #1F6AF5;
+}
+
+.fa-file-pdf {
+    color: rgb(196, 0, 0);
+}
+
+.fa-file-lines {
+    color: #1F6AF5;
+}
+
+.fa-angle-right {
+    grid-area: arrow;
+    font-size: 2em;
+    margin: auto 0;
+}
+
+.tipo {
+    grid-area: tipo;
+    text-align: left;
+    padding-left: 3%;
+    font-size: 12px;
+}
+
+.link {
+    grid-area: link;
+    color: black;
+    font-size: 20px;
+}
+
+.inactive_img {
+    width: 100%;
+}
+
+/* BOTONES Y EMERGENTES */
+
+#checkbox {
+    grid-area: checkbox;
+    width: 70%;
+    height: 100%;
+    margin: 0 1em 0 auto;
+    background-color: var(--MY-gray-lighter);
+    border-radius: 8px;
+    transition: all ease 500ms;
+}
+
+#tarea_modal {
+    position: absolute !important;
+    background-color: var(--MY-gray-lighter);
+    display: none;
+    width: 92%;
+    margin-left: 3.8%;
+    border: 5px solid var(--MY-blue-light);
+    border-radius: 2em;
+    filter: blur(0px) !important;
+    z-index: 1000;
+}
+
+.show {
+    display: flex !important;
+    flex-direction: column;
+}
+
+.blur {
+    filter: blur(3px);
+}
+
+/* .rotado {
+    transform: rotate(90deg);
+} */
+
+.separador {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+#pagina_dropdown {
+    position: relative;
+    background-color: var(--MY-gray-lighter);
+    display: none;
+    width: 92%;
+    border: 5px solid var(--MY-blue-light);
+    border-top: 2px solid var(--MY-blue-light)  ;
+    border-radius: 0 0 2em 2em;
+    padding-bottom: 1em;
+    margin: -1em auto 2em auto;
+}
+

@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Source/css/VIEJOstyleslogin.css">
+    <link rel="stylesheet" href="../Source/css/root.css">
+    <link rel="stylesheet" href="../Source/css/stylesHeader.css">
     <title>Login</title>
-    <link rel="stylesheet" href="/Source/css/styleslogin.css">
-    <link rel="stylesheet" href="/Source/css/root.css">
-    <link rel="stylesheet" href="/Source/css/stylesHeader.css">
 </head>
 <body>
     <header>
@@ -46,58 +46,59 @@
             </a>
         </div>
     </header>
-    <main>
-        <section id="container">
-
-            <img src="/Source/Imagenes/ETEC.jpg" alt="Una foto" id="imagen">
-
-            <section id="login">
-                <div class="box">
-                    <br>
-                    <h1 class="title">Iniciar sesion</h1>
-                    <br>
-                </div>
+    <main style="height: 700px; background-color: var(--MY-gray-light);">
+        <img id="etecLogo" src="../Source/Imagenes/ETEC.jpg" alt="">
+        <div id="container">
+            <div id="logbox">
+                <h1 class="title">Log-in</h1>
                 <hr>
-                <br>
                 <form method="get" action="" class="data-insert">
                     <p>Nombre de usuario:</p>
                     <input type="text" id="userNameLogin">
-                    <br><br>
                     <p>Contraseña:</p>
                     <input type="password" id="passwordLogin">
-                    <br><br>
                 </form>
-                <button type="button" onclick="login()">Iniciar sesion</button>
-                <button type="button" id='swapTo("Register")'>Registrarse</button>
-            </section>
+                <button type="submit" onclick="login()">Login</button>
+                <button type="button" id="toReg" onclick="change(1)">Register</button>
+            </div>
+            
+            <!-- <form method="get" action="">
+                <input type="text" id="userNameLogin">
+                <input type="password" id="passwordLogin">
+            </form>
+            <button type="submit" onclick="login()">Esto funciona</button>  -->
 
-            <section id="register">
-                <div class="box">
-                    <br>
-                    <h1 class="title">Registrarse</h1>
-                    <br>
-                </div>
+            <!-- <form id="logbox">
+                <h1 class="title">Log-in</h1>
                 <hr>
-                <br>
-                <div id="regbox">
-                    <form method="get" action="" class="data-insert">
-                        <p>Nombre de usuario:</p>
-                        <input type="text" name="userNameRegis">
-                        <br><br>
-                        <p>Contraseña:</p>
-                        <input type="password" name="passwordRegis" >
-                        <br><br>
-                        <p>Verificar contraseña:</p>
-                        <input type="password" name="PasswordVerif">
-                        <br><br>
-                    </form>
-                    <button type="button" onclick="register()">Registrarse</button></button>
-                    <button type="button" id='swapTo("Login")'>Iniciar sesion</button>
+                <div class="data-insert">
+                    <p>Nombre de usuario:</p>
+                    <input type="text" id="userNameLogin">
+                    <p>Contraseña:</p>
+                    <input type="password" id="passwordLogin">
                 </div>
-            </section>
-        </section>
+                <button type="submit" onclick="login()">asdasdadasda</button>
+                <div id="redireccionar"><a href="javascript: login()"><button>Texto para que aparezca el boton</button></a></div>
+                <button type="button" id="toReg" onclick="change(1)">Register</button>
+            </form> -->
+
+            <form id="regbox">
+                <h1 class="title">Register</h1>
+                <hr>
+                <div class="data-insert">
+                    <p>Nombre de usuario:</p>
+                    <input type="text" name="userNameRegis">
+                    <p>Contraseña:</p>
+                    <input type="password" name="passwordRegis" >
+                    <p>Verificar contraseña:</p>
+                    <input type="password" name="PasswordVerif">
+                </div>
+                <button type="button" id="toLog" onclick="change(2)">Login</button>
+            </form>
+        </div>
     </main>
+    <footer></footer>
     <script src="https://kit.fontawesome.com/490d09fdd3.js" crossorigin="anonymous"></script>
-    <script src="/Source/js/login.js"></script>
+    <script src="../Source/js/login.js"></script>
 </body>
 </html>

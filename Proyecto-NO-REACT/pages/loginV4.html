@@ -13,44 +13,54 @@
     <main id="main">
         <section class="container" id="cont_log">
             <div id="login">
-                <h1>Iniciar sesión</h1>
+                <center>
+                    <h1>Iniciar sesión</h1>
+                    <img src="../Source/Imagenes/ETEC.jpg" alt="" class="etec-logo">
+                </center>
                 <br>
-                <p class="login_texto">Nombre de usuario</p>
-                <input type="text" id="login_user" placeholder="b.bastan">
-                <br><br>
-                <p class="login_texto">Contraseña</p>
-                <input type="password" name="" id="login_password" placeholder="******">
+                <form action="" method="get" class="order-form">
+                    <p class="login_texto">Nombre de usuario</p>
+                    <input type="text" id="login_user" placeholder="b.bastan">
+                    <p class="login_texto">Contraseña</p>
+                    <input type="password" name="" id="login_password" placeholder="******">
+                </form>
                 <br><br>
                 <div class="login_extras">
                     <p>
                         <input type="checkbox" name="" id="">
                         Recordarme
                     </p>
-                    <a href="">Crear cuenta</a>
+                    <a href="javascript:registrarse()">Crear cuenta</a>
                 </div>
-                <button>Iniciar sesion</button>
+                <button type="button" onclick="iniciarSesion()" class="mainButton">Iniciar sesion</button>
             </div>
         </section>
         <section class="container" id="cont_reg">
             <div id="register">
-                <h1>Registrarse</h1>
+                <center>
+                    <h1>Registrarse</h1>
+                </center>
                 <br>
-                <p>Nombre de usuario</p>
-                <input type="text" id="regis_user">
-                <br><br>
-                <p>Elija una contraseña</p>
-                <input type="password" name="" id="regis_password">
-                <br><br>
-                <p>Confirme la contraseña</p>
-                <input type="password" name="" id="regis_passcheck">
-                <br><br>
+                <form action="" class="order-form">
+                    <p>E-mail</p>
+                    <input type="text" id="regis_mail" placeholder="ejemplo@gmail.com">
+                    <p>Nombre de usuario</p>
+                    <input type="text" id="regis_user" placeholder="b.bastan">
+                    <p>Elija una contraseña</p>
+                    <input type="password" name="" id="regis_password" placeholder="Contraseña12">
+                    <p>Confirme la contraseña</p>
+                    <input type="password" name="" id="regis_passcheck" placeholder="Contraseña12">
+                </form>
+                <br><br><br><br><br><br>
                 <div class="register_extras">
                     <a href="https://etecvirtual.um.edu.ar/login/index.php">Terminos y condiciones</a>
-                    <a href="">Ya tengo una cuenta</a>
+                    <a href="javascript:login()">Ya tengo una cuenta</a>
                 </div>
-                <button>Crear cuenta</button>
+                <button class="mainButton">Crear cuenta</button>
             </div>
         </section>
     </main>
+    <script src="https://kit.fontawesome.com/490d09fdd3.js" crossorigin="anonymous"></script>
+    <script src="/Source/js/loginV4.js"></script>
 </body>
 </html>

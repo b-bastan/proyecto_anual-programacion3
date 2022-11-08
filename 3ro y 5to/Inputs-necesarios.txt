@@ -1,0 +1,24 @@
+Tiro Vertical	0		Return
+    Velocidad Inicial		0 Altura Max
+    Altura Inicial		1 Tiempo a Alt Max
+
+Caida Libre	1		Return
+    Velocidad Inicial		2 Tiempo Total
+    Altura Inicial		3 Velocidad Max
+
+Tiro Oblicuo	2		Return
+    Velocidad Inicial		Tiempo a Alt Max	Tiempo Total
+    Angulo			Distancia total		Altura Max
+
+Tiro Horizontal	3		Return
+    Velocidad Inicial		2 Tiempo Total
+    Altura Inicial		4 Distancia Total
+
+
+Total rets
+
+2x Alt Max
+3x Tiempo Total
+2x Tiempo a Alt Max
+2x Distancia Total
+1x Velocidad Max

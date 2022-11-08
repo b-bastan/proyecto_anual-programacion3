@@ -1,0 +1,10 @@
+#contenedorItems {
+    display: flex;
+}
+
+.item {
+    border: 2px solid grey;
+    border-radius: 20px;
+    margin-right: 20px;
+    padding: 5px;
+}

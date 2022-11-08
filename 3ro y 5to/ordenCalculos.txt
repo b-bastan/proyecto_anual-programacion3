@@ -1,0 +1,27 @@
+Tiro vertical {
+    solicitud de datos
+    tiempoMaximo = velInit / abs(gravedad)
+    alturaMaxima = altInit + (velInit * tiempoMaximo) + (1/2 * gravedad * tiempoMaximo**2)
+
+    Para graficar {
+        Hacer calculo de func por punto intermedio?
+    }
+}
+
+Caida libre {
+    solicitud de datos
+    tiempo = (-velInit - ((velInit)**2 - 4 * (-4.9) * altInit)**(1/2))/(2 * (-4.9)))
+    velFinal = velInit + gravedad + tiempo //PARECE ESTAR MAL)
+}
+
+Tiro oblicuo {
+    solicitud de datos
+
+}
+
+Tiro horizontaL {
+    solicitud de datos
+    tiempoCaida = (altInit / 4.9)**(1/2)
+    distancia = velInit * tiempoCaida
+}
+    

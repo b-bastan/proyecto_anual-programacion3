@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(199, 199, 199);
+}
+
+.usernav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0 0 0 83%;
+    width: 17%;
+    height: fit-content;
+    max-height: 10em;
+    border: rgb(126, 126, 253) 3px solid;
+    border-radius: 0 0 0 20px;
+    background-color: rgb(177, 177, 177);
+}
+
+.usernav-datazone {
+    display: flex;
+    flex-direction: row;
+    margin: 2% 2% 2% 0px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.usernav-user {
+    font-size: 40px;
+}
+
+.usernav-username {
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+.usernav-presetText {
+    color: black;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.usernav-close {
+    padding: 0 10px;
+    font-size: 16px;
+}

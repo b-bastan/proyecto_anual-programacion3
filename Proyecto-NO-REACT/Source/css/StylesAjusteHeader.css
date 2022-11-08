@@ -1,5 +1,46 @@
-/*Lineas 34, 40 y 41 modo oscuro*/ /*VER DONDE MIERDA SE ROMPIERON LOS TAMAÑOS DEL PUTO EXPLORER debe ser algo con el fit-content de quien sabe donde*/
+/*VER DONDE MIERDA SE ROMPIERON LOS TAMAÑOS DEL PUTO EXPLORER debe ser algo con el fit-content de quien sabe donde*/
 /* --- General ---*/ 
+
+#modificable {
+    display: grid;
+    grid-template-areas: auto auto;
+    grid-template-columns: 90% 10%;
+    background-color: var(--MY-blue-darker);
+    width: 45%;
+    height: 60px;
+    margin: 7.5px 0 7.5px 0;
+    border-radius: 2em;
+    align-items: center;
+    justify-items: center;
+}
+
+#modificable .modificable-edit {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 32px;
+    color: var(--MY-gray-lightest);
+    display: none;
+}
+
+#modificable:hover .modificable-edit {
+    display: block;
+}
+
+#modificable-texto {
+    color: white;
+    margin-left: 10px;
+}
+
+#modificable-input-zone {
+    position: fixed;
+    margin: 25vh 0 0 35vw;
+    width: 30%;
+    height: 28vh;
+    border: 5px solid var(--MY-blue-light);
+    border-radius: 20px;
+    background-color: var(--MY-gray-lightest); 
+}
 
 *{
     padding: 0px;
@@ -18,23 +59,13 @@ header{
     max-height: 20%;
     border-bottom: 5px solid var(--MY-blue);
 }
-/* main{
-    padding-left: 20px;
-    background-color: var(--MY-gray-lighter);
-    background-color: rgb(61, 61, 61);
-    color: white;
-} */
+
 header .align-me{
     margin-top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-/*.colito{
-    margin-top: 0%;
-    display: flex;
-    align-items: center;
-}*/
 
 /*--- Gestion de iconos ---*/
 
@@ -162,48 +193,6 @@ header .explorer-item{
     text-align:center
 }
 
-/*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
-
-header .menu li>a{
-    color: white;
-    display: block;
-    text-decoration: none;
-}
-header .menu li>a:hover{
-    background-color: var(--MY-gray-light);
-    transition: 300ms;
-}
-header .menu>li{
-    text-align:left;
-}
-header .menu>li>ul{
-    display: none;
-}
-header .menu>li>ul>li>a{
-    min-width: 140px;
-}
-header .menu>li:hover>ul {
-    padding-left: 5px;
-    display:block;
-}
-
-header ul {
-    list-style:none;
-}
-
-header .nav li ul {
-    display:none;
-    position:absolute;
-    min-width:140px;
-}
-
-header .nav li:hover > ul {
-    display:block;
-    background-color: var(--MY-gray-dark);
-    margin: 5px;
-    margin-left: -10px;
-}
-
 /*DROPDOWN TRES BARRAS DE RESPONSIVE*/
 
 .dropdown-bars {
@@ -284,6 +273,8 @@ header .nav li:hover > ul {
     font-size: 16px;
 }
 
+/*DISPLAY NOTIF*/
+
 .notifnav {
     position: fixed;
     border: rgb(126, 126, 253) 3px solid;
@@ -305,6 +296,8 @@ header .nav li:hover > ul {
 .notifnav-notifs-notif a{
     color: black;
 }
+
+/*DISPLAY NOTES*/
 
 .notenav {
     position: fixed;
@@ -328,7 +321,7 @@ header .nav li:hover > ul {
 }
 
 #newNote {
-    z-index: 100000;
+    z-index: 10000;
     position: fixed;
     margin: 25vh 0 0 35vw;
     width: 30%;
@@ -377,14 +370,17 @@ header .nav li:hover > ul {
     }
     header .align-me{
         padding-bottom: 10px;
-        overflow: hidden; /*Usar en cada elemento individual*/
+        overflow: hidden; /* Usar en cada elemento individual*/
     }
-    header .align-me ul{
+    header .align-me ul{ /* Displayers sueltos del header*/
         display: none;
     }
 }
 
 @media (max-width: 900px){
+    #modificable {
+        width: 290px;
+    }
     header {
         min-height: 71px;
     }
@@ -401,19 +397,6 @@ header .nav li:hover > ul {
         max-width: 100px;
         max-height: 100px;
         display: flex;
-    }
-    header ul .resp {
-        display: none;
-        visibility: hidden;
-    }
-    header ul .resp:nth-last-child(-n+2) {
-        display: flex;
-        visibility: visible;
-    }
-    header ul .resp:first-child{
-        display: flex;
-        max-width: fit-content;
-        visibility: visible;
     }
     header .fa-angles-right{
         transform:rotate(180deg);
@@ -441,35 +424,14 @@ header .nav li:hover > ul {
         max-height: 100px;
         display: flex;
     }
-    header .explorer{
+    header #modificable{
         order: 2;
-        max-width: 80%;
+        max-width: 90%;
         margin: 0 auto 10px auto;
         overflow: hidden;
         justify-content: flex-end;
     }
-    header ul .resp {
-        display: none;
-        visibility: hidden;
-    }
-    header ul .resp:nth-last-child(-n+2) { /*-n dice que empiece desde el ultimo y +2 es para que tome los ultimos 2 elementos*/
-        display: flex;
-        visibility: visible;
-    }
-    header ul .resp:first-child{
-        display: flex;
-        max-width: fit-content;
-        visibility: visible;
-    }
     header .fa-angles-right{
         transform:rotate(180deg);
     }
-    header .navigator{
-        overflow: hidden;
-        max-width: 100px;
-        width: fit-content;
-    }
-    /*.explorer li{
-        width: 100px;
-    }*/
 }

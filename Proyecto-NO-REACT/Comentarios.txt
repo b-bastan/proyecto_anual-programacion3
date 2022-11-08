@@ -1,45 +1,48 @@
+*
+	//////////////////////////////////////////////////////////////////////////////
+	Aplicar y corregir nombre a los colores
+	//////////////////////////////////////////////////////////////////////////////
+	Agregr animaciones
+	Cambiar nombres
+
+header
+	Limpiar CSS //PAIN																													(Hecho en indexAjusteHeader)
+
+Header
+	Retirar zona ubicacion (Central) para espacio personalizable: Zona del medio mide 37% del header									(Hecho en indexAjusteHeader)
+	Dar utilidad a los botones (Quedan calendario (Se retira); destacados; notas (Hacer overflow) y usar LS; mensajes; carpeta)
+	Revisar bien del todo las dimensiones en responsive																					(Hecho en indexAjusteHeader)
+	Limpiar header.html y stylesHeader.css 																								(Hecho en indexAjusteHeader)
+	Mergear ambos index para el header
+	Dejar bonito el newNote y cambiar nombres de clases, mergear con modificable
+
+Login
+	Responsive
+	Recuperar contraseña (Probablemente pagina distinta)
+
+Materia
+	Terminar diseño tarea y dar utilidad
+	Terminar pagina
+	Cambiar animaciones usando funciones para eliminar redundancia de codigo
+	Debido al timeout se quitan ambas secciones y se ve  																				SOLUCIONADO
+		en blanco, no hay nada visible. Solucionable
+		con un if al final, cambiar display == flex
+		a display != block porque error es por falta
+		de display en el html
+	Responsive
+	Utilizar funciones
+
+Contacto
+	Responsive: Creo que hace falta reordenar cómo está hecho
+	Revisar color botones
+
 Prioridad:
 	▲ Muy alta (Alt 30)
 	♦ Alta (Alt 04)
 	• Media (Alt 07)
 	▼ Baja (Alt 31)
+•◘○♦♣♠☺☻♥◙♂♀♪♫☼►◄↕‼¶§▬↨↑↓→←∟↔▲▼ "#$%&'()*+,-./0123456789:;<=>?@
 
-*
-	//////////////////////////////////////////////////////////////////////////////
-	▲ Encontrar nueva gama de colores
-	//////////////////////////////////////////////////////////////////////////////
-	▼ Pasar tantas medidas como pueda a %
-	♦ Ampliar gama de colores
-	• Agregr animaciones
-
-Header
-	▲ Dar utilidad a todos los botones
-	▲ En responsive, se reemplazan los iconos por tres barras, hacer dropbox
-	▲ Revisar bien del todo las dimensiones en responsive
-	• Limpiar header.html y stylesHeader.css
-	♦ Usar JS para navegador de header.hmtl
-	♦ Hacer dropbox en responsive
-
-Login
-	//////////////////////////////////////////////////////////////////////////////
-	▲ Cambiar TODO el PUTO login. IMG
-	//////////////////////////////////////////////////////////////////////////////
-	• Alinear a la izquierda el ultimo elemento
-	• Responsive
-	• Corregir el diseño
-	▼ Ajustar muestreo de imagen
-	• Mejorar diseño
-	• Ajustar dimensiones
-	▼ Agregar header
-
-Pagina
-	♦ Hacer todo. La idea son botones que habilitan secciones, cada una con sus divs desplegables (Vease dropdown menu o combobox, idk)
-	♦ Hacer el coso de tarea para subir archivo
-	♦ Corregir blur 
-
-Contacto
-	▲ Main
-	♦ Responsive
-
-
-•◘○♦♣♠☺☻♥◙♂♀♪♫☼►◄↕‼¶§▬↨↑↓→←∟↔▲▼ "#$
+setTimeout(function timeout() {
+    removeClasesAnimaciones
+}, 500) //Tiempo para que se ejecute, deberia ser tiempo que tarda la animacion de salida

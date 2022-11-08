@@ -2,22 +2,43 @@
 
 * {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 #main {
-    padding-top: 75px;
-    background-color: var(--MY-gray-lighter);
-    min-height: 62.5em;
+    margin-top: 80px;
+    background-color: var(--MY-gray-light);
     transition: all ease 300ms;
+}
+
+/* SUBIR */
+
+#goUp {
+    position: fixed;
+    margin: 70vh 0 0 0.5vw;
+    z-index: 1003;
+    width: 30px;
+    height: 30px;
+    background-color: var(--MY-golden-shiny);
+    opacity: 80%;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+.fa-angle-up {
+    color: black;
+    font-size: 28px;
 }
 
 /* INDICE */
 
-.indice {
+#indice {
     display: flex;
     width: 60%;
     margin: 0 auto;
     justify-content: space-around;
+    
 }
 
 .indice_etapa {
@@ -25,23 +46,27 @@
     height: 3em;
     background-color: var(--MY-gray-lighter);
     border: none;
+    font-size: 14px;
     border-radius: 25px;
+    border-radius: 30px 0px;
     transition: all ease 300ms;
+    border-bottom: 3px solid #15549C;
 }
 
 .indice_etapa:hover {
-    border: 1px solid red;
-    border-radius: 25px;
-    background-color: #6A9BF7;
+    border: 1px solid #15549C;
+    border-radius: 30px 0px;
+    background-color: #a1b5da;
 }
 
 /* APARTADOS */
 
 .apartado {
-    position: absolute;
+    position: relative;
     display: none;
     width: 100%;
-    background-color: grey;
+    border-top: 5px solid var(--MY-gray-lighter);
+    background-color: rgb(206, 206, 206);
     min-height: 2vh;
 }
 
@@ -50,9 +75,10 @@
 }
 
 #inactive {
-    margin-top: 2em;
+    padding-top: 2em;
     text-align: center;
-    z-index: 1;
+    background-color: rgb(206, 206, 206);
+    min-height: 60em;
 }
 
 #inactive div{
@@ -84,6 +110,14 @@
 .pagina {
     grid-template-areas: "logo tipo arrow" "logo link arrow";
     grid-template-columns: 10% 80% 10%;
+}
+
+.pagina .link {
+    cursor: pointer;
+}
+
+.pagina .fa-angle-right {
+    cursor: pointer;
 }
 
 .logo {
@@ -145,15 +179,28 @@
 }
 
 #tarea_modal {
-    position: absolute !important;
-    background-color: var(--MY-gray-lighter);
+    position: fixed !important;
+    background-color: white;
     display: none;
+    z-index: 1001;
     width: 92%;
+    height: 70%;
+    margin: -13%;
     margin-left: 3.8%;
     border: 5px solid var(--MY-blue-light);
     border-radius: 2em;
+    padding-left: 5px;
+    padding-bottom: 1em;
     filter: blur(0px) !important;
-    z-index: 1000;
+}
+
+.horario {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0 0.5em 5%;
+    margin-bottom: 0.5em;
+    margin-left: -5px;
+    border-bottom: 1px solid var(--MY-blue-light);
 }
 
 .show {
@@ -162,27 +209,97 @@
 }
 
 .blur {
-    filter: blur(3px);
+    filter: blur(6px);
 }
+
+.noblur {
+    filter: blur(0px)
+}
+
+/* main :not(.noblur) {
+    filter: blur(0px);
+} */
 
 /* .rotado {
     transform: rotate(90deg);
 } */
 
 .separador {
+    margin-left: -5px;
     display: grid;
-    grid-template-columns: 80% 20%;
+    grid-template-columns: 90% 10%;
+    
+    background-color: rgb(162, 171, 253);
+    border-bottom: 2px solid var(--MY-blue-light);
+    border-radius: 2em 2em 0 0;
+}
+
+.separador h1 {
+    padding: 0.5em 1em;
+}
+
+.separador p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0.95em 0 0;
+    color: red;
+    font-size: 26px;
+}
+
+.separador p:hover {
+    background-color: rgb(134, 146, 255);
+    transition: all 700ms;
 }
 
 #pagina_dropdown {
     position: relative;
     background-color: var(--MY-gray-lighter);
+    z-index: 998;
     display: none;
     width: 92%;
     border: 5px solid var(--MY-blue-light);
-    border-top: 2px solid var(--MY-blue-light)  ;
+    border-top: 1px solid var(--MY-blue-light);
     border-radius: 0 0 2em 2em;
+    padding-left: 5px;
     padding-bottom: 1em;
     margin: -1em auto 2em auto;
 }
 
+/* Animaciones */
+
+.animate__fadeInLeftBig, .animate__fadeInRightBig {
+    animation-duration: 0.5s;
+}
+
+.animate__fadeOutRightBig, .animate__fadeOutLeftBig {
+    animation-duration: 0.5s;
+}
+
+.animate__fadeInDownBig {
+    animation-duration: 1s;
+}
+
+.animate__fadeOutDownBig {
+    animation-duration: 1s;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+    #main {
+        margin-top: 79px;
+    }
+}
+
+@media (max-width: 900px) {
+    #main {
+        margin-top: 76px;
+    }
+}
+
+@media (max-width: 480px) {
+    #main {
+        margin-top: 0;
+    }
+}

@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+    <title>Menu DE PRUEBA</title>
     <link rel="stylesheet" href="/Source/css/styles.css">
     <link rel="stylesheet" href="/Source/css/root.css">
-    <link rel="stylesheet" href="/Source/css/stylesHeader.css">
+    <link rel="stylesheet" href="/Source/css/stylesAjusteHeader.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -19,39 +22,10 @@
                 <i class="fa-solid fa-house icons"></i>
             </a>
         </div>
-        <ul class="explorer nav"> <!--Acoplar los divs para que queden bien-->
-            <li><i class="fa-solid fa-angles-right"></i>
-                <ul class="hidden-for-responsive"></ul> <!-- Usar para expandir el resto -->
-            </li>
-            <li class="navigator resp"><a href="/index.html" class="explorer-item"> Home</a></li>
-            <ul class="menu resp">
-                <li class="navigator"><a href="/pages/materia.html" class="explorer-item"> Programación</a><div class="fa-solid fa-angle-right"></div>
-                    <ul>
-                        <li><a href="#">Literatura</a></li>
-                        <li><a href="#">Redes</a></li>
-                        <li><a href="#">Matemática</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="menu resp"> 
-                <li class="navigator"><a href="#" class="explorer-item"> Wireframe</a><div class="fa-solid fa-angle-right"></div>
-                    <ul>
-                        <li><a href="#">Flex</a></li>
-                        <li><a href="#">Responsive</a></li>
-                        <li><a href="#">Grid</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="menu resp">
-                <li class="navigator"><a href="#" class="explorer-item"> Wireframe</a><div class="fa-solid fa-angle-right"></div>
-                    <ul>
-                        <li>Flex</li>
-                        <li>Responsive</li>
-                        <li>Grid</li>
-                    </ul>
-                </li>
-            </ul>
-        </ul>
+        <div id="modificable">
+            <p id="modificable-texto"></p>
+            <a href="#" onclick="modifyHeaderSquare()" class="modificable-edit"><i class="fa-solid fa-pen-to-square"></i></a>
+        </div>
         <div class="align-me">
             <ul class="support_bar"> <!-- Ordenar las distancias, padding y margin-->
                 <li><a href="#" onclick="notifTrig()"><i class="fa-solid fa-bell icons_menu"></i></a></li>
@@ -61,15 +35,37 @@
                 <li><a href="#" onclick="chatTrig()"><i class="fa-solid fa-message icons_menu"></i></a></li>
                 <li><a href="#" onclick="folderTrig()"><i class="fa-solid fa-folder icons_menu"></i></a></li>
             </ul>
-            <a href="#">
+            <div class="dropdown-bars">
                 <i class="fa-solid fa-bars hidden-ico"></i>
-            </a>
+                <div class="dropdown-content-icons">
+                    <i onclick="notifTrig()" class="fa-solid fa-bell icons_menu"></i>
+                    <i onclick="calendarTrig()" class="fa-solid fa-calendar-days icons_menu"></i>
+                    <i onclick="markedTrig()" class="fa-solid fa-star icons_menu"></i>
+                    <i onclick="notesTrig()" class="fa-solid fa-note-sticky icons_menu"></i>
+                    <i onclick="chatTrig()" class="fa-solid fa-message icons_menu"></i>
+                    <i onclick="folderTrig()" class="fa-solid fa-folder icons_menu"></i>
+                </div>
+            </div>
             <a href="#" onclick="userTrigIndex()">
                 <i class="fa-regular fa-circle-user user"></i>
             </a>
         </div>
     </header>
-    <section id="displayer"></section>
+    <section id="displayer">
+        <div id="modificable-input-zone">
+            <center>
+                <h1>Modificar zona superior</h1>
+            </center>
+            <hr>
+            <div class="modificable-zona-input">
+                <input type="text">
+                <input type="color" name="" id="">
+            </div>
+            <div class="newNote-divButtons">
+                <button>Confirmar cambios</button><button>Cancelar</button>
+            </div>
+        </div>
+    </section>
     <main>
         <section class="materias">
             <a href="/pages/materia2.html" style="color: black;"><div class="materias--materia" onclick="location.href">

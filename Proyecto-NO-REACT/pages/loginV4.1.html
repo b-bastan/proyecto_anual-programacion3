@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="../Source/css/loginV4.1.css">
+    <link rel="stylesheet" href="../Source/css/root.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section id="fillZone">
+            <div class="topZone">
+            </div>
+            <div class="container">
+                <img src="../Source/Imagenes/ETEC.jpg" alt="">
+                <div class="datosExtra">
+                    <p>Términos y condiciones</p>
+                    <p>Uso de cookies</p>
+                </div>
+            </div>
+        </section>
+        <section id="registerZone">
+            <div id="registerTop" class="topZone">
+                <h1>REGISTER</h1>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="container">
+                <form action="" method="get">
+                    <input type="text" placeholder="Nombre de usuario" class="registerInput">
+                    <input type="email" placeholder="Dirección de email" class="registerInput">
+                    <input type="password" placeholder="Contraseña" class="registerInput">
+                    <input type="password" placeholder="Confirmar contraseña" class="registerInput">
+                    <input type="number" placeholder="Teléfono (Opcional)" class="registerInput">
+                </form>
+                <button type="button" onclick="createUser()">Registrarse</button>
+                <button type="button" onclick="setToLogin()">Ya tengo cuenta</button>
+            </div>
+        </section>
+        <section id="loginZone">
+            <div id="loginTop" class="topZone">
+                <h1>LOGIN</h1>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="container">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <form action="" method="get">
+                    <input type="text" class="loginInput" placeholder="Nombre de usuario">
+                    <div id="bajoUser"></div>
+                    <input type="password" class="loginInput" placeholder="Contraseña">
+                    <div id="bajoPass"></div>
+                </form>
+                <button type="button" onclick="verifUser()">Iniciar sesión</button>
+                <button type="button" onclick="setToRegister()">Crear una cuenta</button>
+                <button type="button" onclick="recuperarContraseña()">Olvidé mi contraseña</button>
+            </div>
+        </section>
+    </main>
+    <script src="../Source/js/loginV4.1.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/490d09fdd3.js" crossorigin="anonymous"></script>
+</body>
+</html>

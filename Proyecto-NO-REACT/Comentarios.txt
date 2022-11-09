@@ -23,7 +23,6 @@ Header
 	Hacer responsive para botones																										(Importante)
 
 Login
-	Responsive
 	Recuperar contraseña (Probablemente pagina distinta)
 
 Materia

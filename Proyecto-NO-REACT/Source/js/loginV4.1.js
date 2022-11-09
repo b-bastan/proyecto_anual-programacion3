@@ -97,8 +97,6 @@ function verifUser() {
     userNameLogin = document.getElementsByClassName("loginInput")[0].value;
     userPassLogin = document.getElementsByClassName("loginInput")[1].value;
 
-    console.log(userNameLogin + " " + userPassLogin);
-
     userListFromJSON = JSON.parse(localStorage.getItem("userList")); 
 
     let usuarioEncontrado = false;
@@ -124,7 +122,7 @@ function verifUser() {
                 })
     
                 setTimeout(function timeout() {
-                    window.location.href = "http://127.0.0.1:5500/index.html";
+                    window.location.replace("http://127.0.0.1:5500/index.html");
                 }, 2000)
             } else {
                 const bajoPass = document.getElementById("bajoPass");
@@ -190,7 +188,7 @@ function verifUser() {
 /* CREACION DEPLOY PARA MOBILE */
 
 function displayLogin() {
-    if (screen.width <= 481) {
+    if (screen.width <= 600) {
         if (container[2].style.display == "flex") {
             container[2].style.display = "none";
             container[2].style.height = "0px";
@@ -203,11 +201,12 @@ function displayLogin() {
     } else {
         container[2].style.display = "flex";
         container[2].style.height = "70%";
+        logTop.style.borderRadius = "2em 2em 0 0";
     }
 }
 
 function displayRegis() {
-    if (screen.width <= 481) {
+    if (screen.width <= 600) {
         if (container[1].style.display == "flex") {
             container[1].style.display = "none";
             container[1].style.height = "0px";
@@ -220,5 +219,6 @@ function displayRegis() {
     } else {
         container[1].style.display = "flex";
         container[1].style.height = "70%";
+        regTop.style.borderRadius = "2em 2em 0 0";
     }
 }

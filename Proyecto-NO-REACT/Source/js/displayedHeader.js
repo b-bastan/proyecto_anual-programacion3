@@ -102,7 +102,7 @@ function folderTrig() { //La idea es almacenar archivos propios acá NO ESTA
 }
 
 function addNote() {
-    displayer.innerHTML += '<div id="newNote"><center><h3 class="newNote-title">Nueva nota</h3></center><hr><input type="text" id="newNote-input" placeholder="Finalizar tarea de programacion"><div class="newNote-divButtons"><button onclick="saveNewNote()" style="background-color: rgb(0, 179, 0);">Guardar</button><button onclick="cancelNewNote()" style="background-color: rgb(239, 0, 0);">Cancelar</button></div></div>'
+    displayer.innerHTML += '<div id="newNote"><center><h3 class="newNote-title">Nueva nota</h3></center><hr><input type="text" id="newNote-input" maxlength="50" placeholder="Finalizar tarea de programacion"><div class="newNote-divButtons"><button onclick="saveNewNote()" style="background-color: rgb(83, 184, 81);">Guardar</button><button onclick="cancelNewNote()" style="background-color: #FF9950;">Cancelar</button></div></div>'
 }
 
 function saveNewNote() {

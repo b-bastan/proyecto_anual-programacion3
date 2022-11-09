@@ -68,7 +68,7 @@ footer p{
     grid-area: selection;
 }
 
-.indice-botones {
+#indice-botones {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -77,7 +77,7 @@ footer p{
     flex-wrap: wrap;
 }
 
-.indice-botones button {
+#indice-botones button {
     width: 40%;
     height: 40%;
     background-color: var(--MY-orange-shiny);
@@ -93,12 +93,12 @@ footer p{
     grid-area: inputs;
 }
 
-.input-inputs {
+#input-inputs {
     width: 90%;
     height: 80%;
 }
 
-.input-inputs p {
+#input-inputs p {
     font-size: 18px;
     margin-top: 3%;
 }
@@ -174,4 +174,110 @@ input[type=number]::-webkit-outer-spin-button {
 #graph-zone {
     width: 100%;
     height: 70%;
+}
+
+@media (max-width: 1025px) {
+    /* SE HARA LUEGO */
+}
+
+@media (max-width: 769px) {
+    /* SE HARA LUEGO X2 */
+    #main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+    }
+
+}
+
+@media (max-width: 481px) {
+    h1 {
+        font-size: 24px;
+    }
+    
+    #main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 86vh;
+        height: fit-content;
+    }
+    
+    .titulo {
+        font-size: 24px;
+    }
+
+    .indice, .input-zone, .return-zone {
+        display: flex;
+        align-items: center;
+        border-radius: 1.5em;
+        padding: 3%;
+        width: 90%;
+    }
+
+    #indice-botones, #input-inputs {
+        display: none;
+        height: 0px;
+    }
+
+    #indice-botones button {
+        height: 50px; 
+        margin-bottom: 5px;
+    }
+
+    #input-inputs {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #input-inputs p {
+        width: 40%;
+    }
+
+    #input-inputs p span {
+        display: none;
+    }
+
+    .input-inputs-input {
+        width: 40%;
+    }
+
+    #aplicar-cambios {
+        width: 80vw;
+        margin: 0;
+        margin-top: 2%;
+    }
+
+    .data-return {
+        row-gap: 10px;
+    }
+
+    .data-return p {
+        width: 40%;
+        font-size: 16px;
+    }
+
+    .number-return {
+        height: 7vh;
+        width: 50%;
+        font-size: 16px;
+        display: flex;
+    }
+    
+    footer {
+        height: 8vh;
+    }
+
+    footer p {
+        margin: 0;
+        font-size: 12px;
+        width: 50%;
+    }
+}
+
+@media (max-width: 350px) {
+    h1, .titulo {
+        font-size: 19px;
+    }
 }

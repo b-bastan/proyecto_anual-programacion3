@@ -17,8 +17,8 @@
     </header>
     <main id="main">
         <section class="indice"> <!--Definicion de tipo de funcion-->
-            <h1 class="titulo">Elija el tipo de función</h1>
-            <div class="indice-botones">
+            <h1 class="titulo" onclick="displayFuncTypes()">Elija el tipo de función</h1> <!-- Onclick desplegar div de abajo-->
+            <div id="indice-botones">
                 <button onclick="tiroVertical()">Tiro vertical</button>
                 <button onclick="caidaLibre()">Caída libre</button>
                 <button onclick="tiroOblicuo()">Tiro oblicuo</button>
@@ -26,13 +26,13 @@
             </div>
         </section>
         <section class="input-zone"> <!--Ingreso de datos-->
-            <h1 class="titulo">Ingrese los datos para <span id="function-type">tiro vertical</span></h1>
-            <div class="input-inputs">
-               <p>Velocidad inicial (En metros/segundo)</p>
-               <input type="number" class="input-inputs-input" id="init-Speed" placeholder="Ingrese el valor">
+            <h1 class="titulo" onclick="displayInputs()">Ingrese los datos para <span id="function-type">tiro vertical</span></h1> <!-- Onclick desplegar div de abajo-->
+            <div id="input-inputs">
+               <p>Velocidad inicial <span>(En metros/segundo)</span></p>
+               <input type="number" class="input-inputs-input" id="init-Speed" placeholder="Valor">
 
-               <p id="height-angle-p">Altura inicial (En metros)</p>
-               <input type="number" class="input-inputs-input" id="height-Angle" placeholder="Ingrese el valor">
+               <p id="height-angle-p">Altura inicial <span>(En metros)</span></p>
+               <input type="number" class="input-inputs-input" id="height-Angle" placeholder="Valor">
 
                <button id="aplicar-cambios" onclick="resolveFunction()">Aplicar cambios</button>
             </div>

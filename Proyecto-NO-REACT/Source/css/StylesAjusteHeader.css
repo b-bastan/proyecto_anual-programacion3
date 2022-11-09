@@ -1,4 +1,5 @@
-/*VER DONDE MIERDA SE ROMPIERON LOS TAMAÑOS DEL PUTO EXPLORER debe ser algo con el fit-content de quien sabe donde*/
+/*Puedo quitar de 139 a 211 en principio*/
+
 /* --- General ---*/ 
 
 #modificable {
@@ -47,6 +48,7 @@
     margin: 0px;
     text-decoration: none;
 }
+
 header{
     z-index: 999;
     display: flex; 
@@ -78,10 +80,12 @@ header .icons{
     font-size: 40px;
     color: black;
 }
+
 header .icons:hover{
     color: var(--MY-gray-lighter);
     transition: 700ms;
 }
+
 header .user{
     margin: auto 10px auto 20px;
     font-size: 50px;
@@ -91,10 +95,12 @@ header .user{
     position: relative;
     z-index: 1000000;
 }
+
 header .user:hover{
     background-color: rgb(243, 230, 168);
     transition: 400ms;
 }
+
 header .icons_menu{
     font-size: 30px;
     color: rgb(0, 0, 0);
@@ -103,10 +109,12 @@ header .icons_menu{
     height: 35px;
     text-align: center;
 }
+
 header .icons_menu:hover{
     color: var(--MY-gray-lighter);
     transition: 600ms;
 }
+
 header .fa-house{
     width: 45px;
     margin-right: 10px;
@@ -139,6 +147,7 @@ header .explorer{
     background-color: var(--MY-blue-darker);
     white-space: nowrap; /*No hace el salto de linea*/
 }
+
 header .fa-angles-right{
     font-size: 32px;
     margin-left: 5px;
@@ -146,11 +155,13 @@ header .fa-angles-right{
     padding-right: 5px;
     background-color: var(--MY-gray-dark);
 }
+
 header .fa-angles-right:hover{
     cursor: pointer;
     background-color: var(--MY-gray);
     transition: 300ms;
 }
+
 header .explorer-item{
     overflow: hidden;
     font-size: 17px;
@@ -159,10 +170,12 @@ header .explorer-item{
     color: white;
     font-weight: 400;
 }
+
 header .fa-angle-right{
     padding-left: 5px;
     font-size: 17px;
 }
+
 header .navigator{
     background-color: var(--MY-gray-dark);
     min-width: fit-content;
@@ -172,15 +185,18 @@ header .navigator{
     color: white;
     padding: 5px 10px 5px 10px;
 }
+
 header .navigator:hover{
     cursor: pointer;
     color: white;
     background-color: var(--MY-gray-light);
     transition: 300ms;
 }
+
 header .navigator:hover>.fa-angle-right{
     transform:rotate(90deg);
 }
+
 header .hidden-ico{
     font-size: 0px;
     max-width: 0px;
@@ -188,6 +204,7 @@ header .hidden-ico{
     color: rgb(0, 0, 0);
     display: none;
 }
+
 header .explorer-item{
     float: left;
     text-align:center
@@ -332,6 +349,7 @@ header .explorer-item{
 }
 
 #newNote-input {
+    display: flex;
     width: 90%;
     height: 60%;
     margin: 0 4% 2% 5%;
@@ -361,6 +379,7 @@ header .explorer-item{
     header {
         min-height: 79px;
     }
+
     header .hidden-ico{
         margin-left: 10px;
         font-size: 30px;
@@ -368,29 +387,35 @@ header .explorer-item{
         max-height: 1000px;
         display: flex;
     }
+
     header .align-me{
         padding-bottom: 10px;
         overflow: hidden; /* Usar en cada elemento individual*/
     }
+
     header .align-me ul{ /* Displayers sueltos del header*/
         display: none;
+    }
+
+    #modificable {
+        grid-template-columns: 85% 15%;
     }
 }
 
 @media (max-width: 900px){
-    #modificable {
-        width: 290px;
-    }
     header {
         min-height: 71px;
     }
+
     header .align-me{
         padding-bottom: 10px;
         overflow: hidden; /*Usar en cada elemento individual*/
     }
+
     header .align-me ul{
         display: none;
     }
+
     header .hidden-ico{
         margin-left: 10px;
         font-size: 30px;
@@ -398,8 +423,14 @@ header .explorer-item{
         max-height: 100px;
         display: flex;
     }
+
     header .fa-angles-right{
         transform:rotate(180deg);
+    }
+
+    #modificable {
+        width: 290px;
+        grid-template-columns: 80% 20%;
     }
 }
 @media (max-width: 480px) {

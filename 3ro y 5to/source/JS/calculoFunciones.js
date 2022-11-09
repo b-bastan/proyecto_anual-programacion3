@@ -2,10 +2,13 @@
 
 let tipoTiro = 0;
 
+const inputsZone = document.getElementById("input-inputs");
+const indiceZone = document.getElementById("indice-botones");
+
 // FUNCIONES DE DEFINICION DE TIPO TIRO
 
 function tiroVertical() {
-    document.getElementById("height-angle-p").innerHTML = 'Altura incial';
+    document.getElementById("height-angle-p").innerHTML = 'Altura incial <span>(En metros)</span>';
     document.getElementById("function-type").innerHTML = 'tiro vertical';
     Swal.fire({
         icon: 'success',
@@ -19,7 +22,7 @@ function tiroVertical() {
 }
 
 function caidaLibre() {
-    document.getElementById("height-angle-p").innerHTML = 'Altura incial';
+    document.getElementById("height-angle-p").innerHTML = 'Altura incial <span>(En metros)</span>';
     document.getElementById("function-type").innerHTML = 'caída libre';
     Swal.fire({
         icon: 'success',
@@ -33,7 +36,7 @@ function caidaLibre() {
 }
 
 function tiroOblicuo() {
-    document.getElementById("height-angle-p").innerHTML = 'Ángulo de lanzamiento (En grados)';
+    document.getElementById("height-angle-p").innerHTML = 'Ángulo de lanzamiento <span>(En grados)</span>';
     document.getElementById("function-type").innerHTML = 'tiro oblicuo';
     Swal.fire({
         icon: 'success',
@@ -47,7 +50,7 @@ function tiroOblicuo() {
 }
 
 function tiroHorizontal() {
-    document.getElementById("height-angle-p").innerHTML = 'Altura incial';
+    document.getElementById("height-angle-p").innerHTML = 'Altura incial <span>(En metros)</span>';
     document.getElementById("function-type").innerHTML = 'tiro horizontal';
     Swal.fire({
         icon: 'success',
@@ -207,4 +210,34 @@ function clsDivs() {
     document.getElementById("return-2").innerHTML = "";
     document.getElementById("return-3").innerHTML = "";
     document.getElementById("return-4").innerHTML = "";
+}
+
+function displayFuncTypes() {
+    if (screen.width <= 481) {
+        if (indiceZone.style.display == "flex") {
+            indiceZone.style.display = "none";
+            indiceZone.style.height = "0px";
+        } else {
+            indiceZone.style.display = "flex";
+            indiceZone.style.height = "fit-content";
+        }
+    } else {
+        indiceZone.style.display = "flex";
+        indiceZone.style.height = "80%";
+    }
+}
+
+function displayInputs() {
+    if (screen.width <= 481) {
+        if (inputsZone.style.display == "flex") {
+            inputsZone.style.display = "none";
+            inputsZone.style.height = "0px";
+        } else {
+            inputsZone.style.display = "flex";
+            inputsZone.style.height = "fit-content";
+        }
+    } else {
+        inputsZone.style.display = "block";
+        inputsZone.style.height = "80%";
+    }
 }

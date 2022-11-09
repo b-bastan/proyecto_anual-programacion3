@@ -1,6 +1,9 @@
 const contImg = document.getElementById("fillZone");
 const contReg = document.getElementById("registerZone");
 const contLog = document.getElementById("loginZone");
+const logTop = document.getElementById("loginTop");
+const regTop = document.getElementById("registerTop");
+const container = document.getElementsByClassName("container");
 
 /* FUNCIONES CAMBIO DE SECCION */
 
@@ -182,4 +185,40 @@ function verifUser() {
     //     bajoUser.innerHTML = '<div class="error"><i class="fa-solid fa-circle-xmark"></i> El nombre de usuario no existe</div>';
     //     bajoPass.innerHTML = "";
     // }
+}
+
+/* CREACION DEPLOY PARA MOBILE */
+
+function displayLogin() {
+    if (screen.width <= 481) {
+        if (container[2].style.display == "flex") {
+            container[2].style.display = "none";
+            container[2].style.height = "0px";
+            logTop.style.borderRadius = "2em";
+        } else {
+            container[2].style.display = "flex";
+            container[2].style.height = "fit-content";
+            logTop.style.borderRadius = "2em 2em 0 0";
+        }
+    } else {
+        container[2].style.display = "flex";
+        container[2].style.height = "70%";
+    }
+}
+
+function displayRegis() {
+    if (screen.width <= 481) {
+        if (container[1].style.display == "flex") {
+            container[1].style.display = "none";
+            container[1].style.height = "0px";
+            regTop.style.borderRadius = "2em";
+        } else {
+            container[1].style.display = "flex";
+            container[1].style.height = "fit-content";
+            regTop.style.borderRadius = "2em 2em 0 0";
+        }
+    } else {
+        container[1].style.display = "flex";
+        container[1].style.height = "70%";
+    }
 }

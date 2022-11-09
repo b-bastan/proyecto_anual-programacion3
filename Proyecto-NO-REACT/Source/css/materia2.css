@@ -290,6 +290,18 @@
     #main {
         margin-top: 79px;
     }
+
+    #indice {
+        width: 90%;
+    }
+
+    .indice_etapa {
+        width: 20%;
+    }
+
+    #pagina_dropdown {
+        width: 90%;
+    }
 }
 
 @media (max-width: 900px) {
@@ -301,5 +313,17 @@
 @media (max-width: 480px) {
     #main {
         margin-top: 0;
+    }
+
+    #indice {
+        width: 100%;
+    }
+
+    .indice_etapa {
+        width: 25%;
+    }
+
+    #pagina_dropdown {
+        width: 85%;
     }
 }

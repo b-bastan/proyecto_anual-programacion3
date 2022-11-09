@@ -5,16 +5,22 @@
 	Agregr animaciones
 	Cambiar nombres
 
-header
+General
+	Utilizar LS para notas, medio header y eso
+	Ver qué utilizar en vez de LS
+
+Header
 	Limpiar CSS //PAIN																													(Hecho en indexAjusteHeader)
 
 Header
 	Retirar zona ubicacion (Central) para espacio personalizable: Zona del medio mide 37% del header									(Hecho en indexAjusteHeader)
-	Dar utilidad a los botones (Quedan calendario (Se retira); destacados; notas (Hacer overflow) y usar LS; mensajes; carpeta)
 	Revisar bien del todo las dimensiones en responsive																					(Hecho en indexAjusteHeader)
 	Limpiar header.html y stylesHeader.css 																								(Hecho en indexAjusteHeader)
 	Mergear ambos index para el header
 	Dejar bonito el newNote y cambiar nombres de clases, mergear con modificable
+
+	Dar utilidad a los botones (Quedan calendario (Se retira); destacados; notas (Hacer overflow) y usar LS; mensajes; carpeta)			(Importante)
+	Hacer responsive para botones																										(Importante)
 
 Login
 	Responsive
@@ -22,15 +28,8 @@ Login
 
 Materia
 	Terminar diseño tarea y dar utilidad
-	Terminar pagina
-	Cambiar animaciones usando funciones para eliminar redundancia de codigo
-	Debido al timeout se quitan ambas secciones y se ve  																				SOLUCIONADO
-		en blanco, no hay nada visible. Solucionable
-		con un if al final, cambiar display == flex
-		a display != block porque error es por falta
-		de display en el html
-	Responsive
-	Utilizar funciones
+	Responsive																															(En progreso)
+	Pasar a seccion de derecha aplica animación a 2/3 del header
 
 Contacto
 	Responsive: Creo que hace falta reordenar cómo está hecho
@@ -43,6 +42,6 @@ Prioridad:
 	▼ Baja (Alt 31)
 •◘○♦♣♠☺☻♥◙♂♀♪♫☼►◄↕‼¶§▬↨↑↓→←∟↔▲▼ "#$%&'()*+,-./0123456789:;<=>?@
 
-setTimeout(function timeout() {
+setTimeout(function timeout() => {
     removeClasesAnimaciones
 }, 500) //Tiempo para que se ejecute, deberia ser tiempo que tarda la animacion de salida

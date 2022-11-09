@@ -176,6 +176,12 @@ input[type=number]::-webkit-outer-spin-button {
     height: 70%;
 }
 
+@media (max-width: 1500px) {
+    h1, .titulo {
+        font-size: 22px;
+    }
+}
+
 @media (max-width: 1025px) {
     /* SE HARA LUEGO */
 }
